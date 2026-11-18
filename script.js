@@ -1,7 +1,7 @@
 /* Isi SUPABASE_URL dan SUPABASE_ANON_KEY dari Supabase > Project Settings > API.
    Gunakan publishable/anon key, JANGAN gunakan secret atau service_role key. */
-const SUPABASE_URL = "PASTE_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_ANON_KEY = "PASTE_SUPABASE_PUBLISHABLE_OR_ANON_KEY_HERE";
+const SUPABASE_URL = "https://sxauznxtenkebiiaynbb.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_FXjC1g3j6XCz-4OZrJWrgA_ra2UPhFT";
 const TABLE = "site_content";
 const BUCKET = "class-media";
 const DEFAULT_CONTENT = {
