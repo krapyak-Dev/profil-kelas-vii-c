@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <title>Profil Kelas VII C</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="announcement" id="announcement">WEBSITE RESMI KELAS VII C</div>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <img id="brandLogo" src="https://placehold.co/80x80/171b26/d6b46b?text=VII+C" alt="Logo kelas">
+      <span><strong id="brandName">KELAS VII C</strong><small id="brandTagline">Bersama, Berkarya, Berprestasi</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Beranda</a><a href="#profil">Profil</a><a href="#anggota">Anggota</a>
+      <a href="#galeri">Galeri</a><a href="#pengumuman">Informasi</a><a href="#kontak">Kontak</a>
+    </nav>
+    <a class="header-cta" id="headerContact" href="#kontak">Hubungi Kami <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" id="heroImage"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <div class="eyebrow"><span></span><span id="heroEyebrow">PROFIL KELAS • TAHUN AJARAN 2026/2027</span></div>
+        <h1 id="heroTitle">Satu Kelas,<br><em>Banyak Cerita.</em></h1>
+        <p id="heroDescription">Selamat datang di website resmi kelas VII C. Tempat kami belajar, tumbuh, dan menciptakan kenangan bersama.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#profil">Jelajahi Profil <span>↘</span></a><a class="button button-outline" href="#galeri">Lihat Galeri</a></div>
+      </div>
+      <div class="hero-foot wrap"><span id="heroFootLeft">KOMPAK • KREATIF • INSPIRATIF</span><span id="heroFootRight">EST. 2026</span></div>
+    </section>
+
+    <section class="intro-section wrap section" id="profil">
+      <div class="section-kicker">01 / TENTANG KAMI</div>
+      <div class="intro-grid">
+        <div><h2 id="aboutTitle">Mengenal lebih dekat<br><em>keluarga VII C.</em></h2></div>
+        <div><p class="lead" id="aboutText">Kami adalah keluarga kelas VII C yang terdiri dari siswa-siswi dengan semangat untuk belajar, saling mendukung, dan berkembang bersama.</p><p class="muted" id="aboutExtra">Setiap hari adalah kesempatan untuk mencoba hal baru, bekerja sama, dan menciptakan pengalaman yang berarti.</p></div>
+      </div>
+      <div class="stats">
+        <div><strong id="statStudents">28</strong><span>SISWA</span></div>
+        <div><strong id="statTeachers">—</strong><span>WALI KELAS</span></div>
+        <div><strong id="statYear">2026</strong><span>TAHUN AJARAN</span></div>
+      </div>
+    </section>
+
+    <section class="dark-section section" id="anggota">
+      <div class="wrap">
+        <div class="section-kicker">02 / STRUKTUR KELAS</div>
+        <div class="section-heading"><h2 id="membersTitle">Orang-orang di balik<br><em>cerita VII C.</em></h2><p id="membersIntro">Kenali teman-teman dan pengurus kelas kami.</p></div>
+        <div class="member-grid" id="memberGrid"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section wrap section" id="galeri">
+      <div class="section-kicker">03 / DOKUMENTASI</div>
+      <div class="section-heading"><h2 id="galleryTitle">Potongan cerita<br><em>yang tersimpan.</em></h2><p id="galleryIntro">Momen kebersamaan yang menjadi bagian dari perjalanan kelas kami.</p></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="news-section section" id="pengumuman">
+      <div class="wrap">
+        <div class="section-kicker">04 / KABAR KELAS</div>
+        <div class="section-heading"><h2 id="newsTitle">Informasi &<br><em>pengumuman.</em></h2><p id="newsIntro">Informasi terbaru seputar kegiatan kelas VII C.</p></div>
+        <div class="news-list" id="newsList"></div>
+      </div>
+    </section>
+
+    <section class="contact-section wrap section" id="kontak">
+      <div class="contact-card">
+        <div class="section-kicker">05 / HUBUNGI KAMI</div>
+        <h2 id="contactTitle">Ada yang ingin<br><em>ditanyakan?</em></h2>
+        <p id="contactText">Hubungi administrator kelas melalui kontak berikut.</p>
+        <div class="contact-details"><div><span>ALAMAT</span><strong id="contactAddress">Alamat sekolah / kelas</strong></div><div><span>TELEPON</span><strong id="contactPhone">Belum diatur</strong></div><div><span>EMAIL</span><strong id="contactEmail">Belum diatur</strong></div></div>
+        <a class="button button-gold" id="whatsappButton" href="#" target="_blank" rel="noopener">Hubungi via WhatsApp <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><div><strong id="footerName">KELAS VII C</strong><p id="footerText">Bersama, Berkarya, Berprestasi.</p></div><span id="footerCopyright">© 2026 Kelas VII C. All rights reserved.</span><button class="admin-link" id="openAdmin">Administrator</button></div></footer>
+
+  <dialog id="adminDialog">
+    <div class="admin-shell">
+      <div class="admin-top"><div><span class="section-kicker">AREA TERBATAS</span><h2>Administrator</h2></div><button class="close-dialog" id="closeAdmin" aria-label="Tutup">×</button></div>
+      <div id="loginPanel">
+        <p class="muted">Masuk menggunakan akun administrator Supabase.</p>
+        <label>Email administrator<input id="adminEmail" type="email" autocomplete="username" placeholder="admin@email.com"></label>
+        <label>Password<input id="adminPassword" type="password" autocomplete="current-password" placeholder="Password"></label>
+        <button class="button button-gold full" id="loginButton">Masuk</button>
+        <p class="form-message" id="loginMessage"></p>
+      </div>
+      <div id="dashboardPanel" hidden>
+        <div class="dashboard-bar"><span id="adminIdentity"></span><button class="text-button" id="logoutButton">Keluar</button></div>
+        <div class="admin-tabs"><button class="active" data-tab="contentTab">Konten</button><button data-tab="membersTab">Anggota</button><button data-tab="galleryTab">Galeri</button><button data-tab="newsTab">Pengumuman</button></div>
+        <section class="admin-tab" id="contentTab">
+          <h3>Konten utama</h3>
+          <div class="form-grid">
+            <label>Nama kelas<input data-path="brandName"></label><label>Slogan<input data-path="brandTagline"></label>
+            <label>Judul utama<input data-path="heroTitle"></label><label>Teks kecil hero<input data-path="heroEyebrow"></label>
+            <label class="span-2">Deskripsi utama<textarea data-path="heroDescription" rows="2"></textarea></label>
+            <label>Judul profil<input data-path="aboutTitle"></label><label>Jumlah siswa<input data-path="statStudents"></label>
+            <label class="span-2">Deskripsi profil<textarea data-path="aboutText" rows="2"></textarea></label>
+            <label class="span-2">Deskripsi tambahan<textarea data-path="aboutExtra" rows="2"></textarea></label>
+            <label>Judul anggota<input data-path="membersTitle"></label><label>Pengantar anggota<input data-path="membersIntro"></label>
+            <label>Judul galeri<input data-path="galleryTitle"></label><label>Pengantar galeri<input data-path="galleryIntro"></label>
+            <label>Judul informasi<input data-path="newsTitle"></label><label>Pengantar informasi<input data-path="newsIntro"></label>
+            <label>Judul kontak<input data-path="contactTitle"></label><label>Telepon administrator<input data-path="contactPhone"></label>
+            <label class="span-2">Teks kontak<textarea data-path="contactText" rows="2"></textarea></label>
+            <label class="span-2">Alamat<input data-path="contactAddress"></label>
+            <label>Email<input data-path="contactEmail"></label><label>Nomor WhatsApp (kode negara, tanpa +)<input data-path="whatsappNumber" placeholder="6281234567890"></label>
+            <label>Link tombol header<input data-path="headerContact"></label><label>Teks footer<input data-path="footerText"></label>
+            <label>Copyright<input data-path="footerCopyright"></label><label>Tahun ajaran<input data-path="statYear"></label>
+            <label class="span-2">Link media sosial (satu URL per baris)<textarea data-path="socialLinks" rows="3" placeholder="https://instagram.com/..."></textarea></label>
+          </div>
+          <div class="upload-row"><label>Logo kelas<input type="file" id="logoUpload" accept="image/*"></label><label>Foto banner utama<input type="file" id="heroUpload" accept="image/*"></label></div>
+          <button class="button button-gold" id="saveContent">Simpan perubahan konten</button>
+        </section>
+        <section class="admin-tab" id="membersTab" hidden>
+          <h3>Data anggota kelas</h3><p class="muted small">Satu anggota per baris dengan format: Nama | Jabatan | URL foto. Baris tanpa foto tetap boleh.</p>
+          <textarea id="membersEditor" rows="12" class="code-editor"></textarea>
+          <button class="button button-gold" id="saveMembers">Simpan anggota</button>
+        </section>
+        <section class="admin-tab" id="galleryTab" hidden>
+          <h3>Galeri kelas</h3><p class="muted small">Satu foto per baris dengan format: Judul | URL gambar | Keterangan.</p>
+          <textarea id="galleryEditor" rows="10" class="code-editor"></textarea>
+          <label class="file-label">Tambah foto ke galeri<input type="file" id="galleryUpload" accept="image/*" multiple></label>
+          <button class="button button-gold" id="saveGallery">Simpan galeri</button>
+        </section>
+        <section class="admin-tab" id="newsTab" hidden>
+          <h3>Pengumuman kelas</h3><p class="muted small">Satu pengumuman per baris dengan format: Tanggal | Judul | Isi | Link (opsional).</p>
+          <textarea id="newsEditor" rows="10" class="code-editor"></textarea>
+          <button class="button button-gold" id="saveNews">Simpan pengumuman</button>
+        </section>
+        <p class="form-message" id="adminMessage" aria-live="polite"></p>
+      </div>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
